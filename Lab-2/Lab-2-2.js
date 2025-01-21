@@ -8,8 +8,8 @@
 		// Correct password
 		// user name input
 		// password input
-var userName = "dart"
-var password = "vader"
+var userName = "dart";
+var password = "vader";
 
 
 //====LOGIC===================
