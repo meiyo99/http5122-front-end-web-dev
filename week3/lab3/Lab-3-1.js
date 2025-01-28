@@ -5,4 +5,4 @@
 var myFruits = ["Apple", "Mango", "Grapes", "Bananas", "Kiwi"];
 
 //OUTPUT ONE FRUIT FROM THE ARRAY IN POPUP BOX
-console.log(myFruits[2]);
+alert(myFruits[2]);
