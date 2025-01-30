@@ -13,7 +13,7 @@ var movieList = [movie1, movie2, movie3, movie4, movie5, movie6, movie7];
 var userInput = prompt("Which top 7 movie would you like? Pick a number: 1-7");
 
 // USED A WHILE LOOP TO TAKE AN INPUT FROM THE USER.
-while( userInput === "" || userInput === null || userInput < 1 || userInput > 7) {
+while(parseInt(userInput) != userInput || userInput === "" || userInput === null || userInput < 1 || userInput > 7) {
     // USED THE LOOP TO RE-ASK THE USER IF THEY ENTER INVALID DATA.
     alert("Please enter a number between 1 and 7!");
     userInput = prompt("Which top 7 movie would you like? Pick a number: 1-7");
