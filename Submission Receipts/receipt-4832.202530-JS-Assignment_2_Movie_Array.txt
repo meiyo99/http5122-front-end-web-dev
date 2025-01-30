@@ -1,0 +1,8 @@
+Your submission was successful!
+Course: 4832.202530, Front-End Web Development - HTTP-5122-0NB
+Assessment: JS-Assignment_2_Movie_Array
+
+Submission date: 1/29/25, 10:01 PM
+Submission size: 847.1 KB
+Submitter: Mayuresh Naidu
+Confirmation number: 2dd1b3f9a369401f83cdeb4e514b4ed6
