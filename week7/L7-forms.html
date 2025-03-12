@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link href="L7-forms.css" rel="stylesheet" type="text/css" />
+	<script src="L7-forms.js"></script>
+	<title>Forms</title>
+</head>
+<body>
+<h1>Join our Mailing List</h1>
+
+<!--MAILING LIST FORM-->
+<form action="L7-formthanks.html" method="get" id="surveyForm" name="myForm">
+<fieldset>
+	<legend>Please complete your information</legend>
+<!--USER INFORMATION-->
+	<fieldset>
+		<legend>Your Information</legend>
+<!--IN THIS EXAMPLE, MY INPUT IDs START WITH in_ AND NAMES START WITH f_ -->
+		<!-- NAME -->
+	<p>
+		<label for="in_Name">Name:</label>
+		<input type="text" id="in_Name" name="f_Name" />
+		<span id="nameErr"></span>
+	</p>
+
+		<!-- EMAIL -->
+	<p>
+		<label for="in_Email">Email:</label>
+		<input type="text" id="in_Email" name="f_Email" />
+		<span id="emailErr"></span>
+	</p>
+
+		<!-- PERMISSION -->
+		<p><label for="in_Auth">I consent to joining your mailing list:</label>
+		<input type="checkbox" id="in_Auth" name="f_Auth" value="YES" /></p>
+
+		<!--COUNTRY-->
+		<p><label for="in_Country">Where do you live?</label>
+		<select id="in_Country" name="f_Country">
+			<option value="XX">--Select Country--</option>
+			<option value="CA">Canada</option>
+			<option value="US">USA</option>
+		</select>
+<!--PROVINCE SELECT IS HIDDEN BY CSS. WE WILL SHOW WITH JS-->
+		<!--PROVINCE/STATE-->
+		<select id="in_Prov" name="f_Prov">
+			<option value="NL">Newfoundland &amp; Labrador</option>
+			<option value="PE">Prince Edward Island</option>
+			<option value="NS">Nova Scotia</option>
+			<option value="NB">New Brunswick</option>
+			<option value="QU">Quebec</option>
+			<option value="ON" selected>Ontario</option>
+			<option value="MB">Manitoba</option>
+			<option value="SK">Saskatchewan</option>
+			<option value="AB">Alberta</option>
+			<option value="BC">British Columbia</option>
+		</select> 
+		</p>
+	</fieldset>
+ 
+ <!-- SUBMIT -->
+ <p>
+	<input type="submit" value="Submit this Form" name="f_submit" />
+	<input type="reset" value="RESET" name="f_reset" />
+ </p>
+
+</fieldset>
+</form>
+<!-- <script type="text/javascript" src="8-forms-2016-PRINT.js"></script>  -->
+</body>
+</html>
