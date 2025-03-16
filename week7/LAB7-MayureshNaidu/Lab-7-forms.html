@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Forms</title>
-<style>#thanks_msg{display: none;}#thanksSpeed, #thanksPC{color:green;font-size:2em;}</style>
+	<style>#thanks_msg{display: none;}#thanksSpeed, #thanksPC{color:green;font-size:2em;}</style>
 	<script src="Lab-7-forms.js"></script> 
 </head>
 <body>
@@ -14,7 +14,7 @@
 <fieldset>
 	<legend>Please complete your shipping preferences - Note that all fields are required</legend>
 
-	<!--SPEED OF DELIVERY
+	SPEED OF DELIVERY
 	<p><label for="in_Speed">Select your speed of delivery</label>
 		<select id="in_Speed" name="f_speed">
 		  <option value="0">===SELECT===</option>
@@ -22,7 +22,7 @@
 		  <option value="20">Express Delivery</option>
 		  <option value="100">Next Day Delivery</option>
 		</select>
-	</p>-->
+	</p>
 
 <!--USER INFORMATION-->
 	<fieldset>
@@ -51,10 +51,9 @@
 <div id="thanks_msg">
 	<h2>Thank you <span id="thanksCustomer"></span> for your purchase!</h2>
 	<div>
-		<p>Your package will be sent 
-<!--	by <span id="thanksSpeed"></span> UNCOMMENT FOR EXTRA CHALLENGE		-->
+		<p>Your package will be sent by <span id="thanksSpeed"></span>		
 		to <span id="thanksPC">you</span>.</p>
-<!--	<p>The cost of shipping will be $<span id="thanksCost"></span>.</p>		 UNCOMMENT FOR EXTRA CHALLENGE-->
+		<p>The cost of shipping will be $<span id="thanksCost"></span>.</p>
 	</div>
 </div>
 
