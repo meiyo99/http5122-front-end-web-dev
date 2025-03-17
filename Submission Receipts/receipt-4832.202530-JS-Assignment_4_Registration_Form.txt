@@ -1,0 +1,8 @@
+Your submission was successful!
+Course: 4832.202530, Front-End Web Development - HTTP-5122-0NB
+Assessment: JS-Assignment_4_Registration_Form
+
+Submission date: 3/17/25, 10:26 AM
+Submission size: 216.6 KB
+Submitter: Mayuresh Naidu
+Confirmation number: 73aa6f6c948a4483a1eaaeeed0ff0afd
