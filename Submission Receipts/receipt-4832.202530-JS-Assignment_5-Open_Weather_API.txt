@@ -1,0 +1,8 @@
+Your submission was successful!
+Course: 4832.202530, Front-End Web Development - HTTP-5122-0NB
+Assessment: JS-Assignment_5-Open_Weather_API
+
+Submission date: 4/15/25, 5:18 PM (EDT)
+Submission size: 4.6 KB
+Submitter: Mayuresh Naidu
+Confirmation number: af8f269cd96d472db6bd97f8679c0a00

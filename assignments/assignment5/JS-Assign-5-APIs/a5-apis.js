@@ -8,6 +8,7 @@ window.onload = function() {
     var outLocation = document.getElementById("location");
     var outTemp = document.getElementById("temperature");
     var outConditions = document.getElementById("conditions");
+    var outSpeed = document.getElementById("speed");
 
     // My open weather API Key is: 9e82c1839075fcbb5fba24e4e990296b
 
@@ -29,18 +30,21 @@ window.onload = function() {
         xhr.responseType = 'json';
         xhr.send(null);
 
+        // var imgsrc = "https://openweathermap.org/img/wn/";
+
         xhr.onreadystatechange = function() {
             if (xhr.readyState === 4) {
                 if (xhr.status === 200) {
                     var DATA = xhr.response;
                     console.log(DATA);
                     output.style.display = "block";
-                    outIcon.innerHTML = DATA.weather[0].icon;
+                    outIcon.innerHTML = "<img src='https://openweathermap.org/img/wn/" + DATA.weather[0].icon + ".png'>";
                     outLocation.innerHTML = DATA.name;
                     outTemp.innerHTML = Math.round(DATA.main.temp) + '&deg;C';
 
                     // Making the first letter uppercase: https://stackoverflow.com/questions/1026069/how-do-i-make-the-first-letter-of-a-string-uppercase-in-javascript
                     outConditions.innerHTML = DATA.weather[0].description.charAt(0).toUpperCase() + DATA.weather[0].description.slice(1) + '.';
+                    outSpeed.innerHTML = DATA.wind.speed;
                 } else {
                     output.style.display = "block";
                     outError.innerHTML = "API call was unsuccessful";
@@ -67,12 +71,13 @@ window.onload = function() {
                     var DATA = xhr.response;
                     console.log(DATA);
                     output.style.display = "block";
-                    outIcon.innerHTML = DATA.weather[0].icon;
+                    outIcon.innerHTML = "<img src='https://openweathermap.org/img/wn/" + DATA.weather[0].icon + ".png'>";
                     outLocation.innerHTML = DATA.name;
                     outTemp.innerHTML = Math.round(DATA.main.temp) + '&deg;C';
 
                     // Making the first letter uppercase: https://stackoverflow.com/questions/1026069/how-do-i-make-the-first-letter-of-a-string-uppercase-in-javascript
                     outConditions.innerHTML = DATA.weather[0].description.charAt(0).toUpperCase() + DATA.weather[0].description.slice(1) + '.';
+                    outSpeed.innerHTML = DATA.wind.speed;
                 } else {
                     var DATA = xhr.response;
                     console.log(DATA);
