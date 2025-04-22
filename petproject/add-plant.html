@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantPal - Add Plant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo.png" alt="PlantPal Logo" id="logo"></a>
+        <h1 id="plant-species-header">Add Plant</h1> </header>
+
+    <main>
+        <form id="add-plant-form">
+            <div class="form-tile">
+                <div class="form-group">
+                    <label for="plant-image-input">Add Image:</label>
+                    <input type="file" id="plant-image-input" accept="image/*">
+                    <img id="species-image-preview" src="images/placeholder.png" alt="Plant Species Image" style="max-width: 100px; display: block; margin-top: 5px;">
+                     <small>Uses species default image. File upload is a future feature.</small>
+                </div>
+                <div class="form-group">
+                    <label for="plant-name">Plant Nickname:</label>
+                    <input type="text" id="plant-name" name="plantName" required>
+                </div>
+                 <div class="form-group">
+                    <label for="plant-description">Description/Notes:</label>
+                    <textarea id="plant-description" name="plantDescription" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="watering-frequency">Watering Frequency:</label>
+                    <select id="watering-frequency" name="wateringFrequency" required>
+                        <option value="" disabled selected>Select frequency</option>
+                        <option value="3">Every 3 days</option>
+                        <option value="7">Weekly</option>
+                        <option value="10">Every 10 days</option>
+                        <option value="14">Every 2 weeks</option>
+                        <option value="30">Monthly</option>
+                    </select>
+                </div>
+                 <div class="form-group">
+                    <label for="last-watered">Last Watered Date:</label>
+                    <input type="date" id="last-watered" name="lastWatered" required>
+                    <small>Needed for calendar reminders.</small>
+                </div>
+            </div>
+        </form>
+
+        <div id="plant-tips-section">
+            <h2>Care Tips</h2>
+            <ul id="tips-list">
+                </ul>
+        </div>
+
+        <div class="button-container">
+            <button type="button" id="cancel-btn">Cancel</button>
+            <button type="submit" form="add-plant-form" id="submit-btn">Submit</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 PlantPal</p>
+    </footer>
+
+    <script src="jquery-3.7.1.min.js" ></script>
+    <script src="js/main.js"></script>
+    <script src="js/addPlant.js"></script>
+</body>
+</html>

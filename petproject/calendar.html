@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantPal - Care Calendar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo.png" alt="PlantPal Logo" id="logo"></a>
+        <h1>Care Calendar</h1>
+    </header>
+
+    <main>
+        <div id="calendar-controls">
+             <button id="prev-month-btn">&lt; Prev</button>
+             <h2 id="month-year-header">Month Year</h2>
+             <button id="next-month-btn">Next &gt;</button>
+        </div>
+        <div id="calendar-grid">
+            <div class="day-header">Sun</div>
+            <div class="day-header">Mon</div>
+            <div class="day-header">Tue</div>
+            <div class="day-header">Wed</div>
+            <div class="day-header">Thu</div>
+            <div class="day-header">Fri</div>
+            <div class="day-header">Sat</div>
+            </div>
+         <a href="index.html" class="back-button">Back to Home</a>
+    </main>
+
+    <div id="watering-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Watering Task</h2>
+            <p id="modal-plant-info">Plant: [Plant Name/Species]</p>
+            <p id="modal-task-date">Date: [Date]</p>
+            <button id="mark-watered-btn">Mark as Watered</button>
+            <button id="water-tomorrow-btn">Remind Tomorrow</button> </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2025 PlantPal</p>
+    </footer>
+
+    <script src="jquery-3.7.1.min.js" ></script>
+     <script src="js/main.js"></script>
+    <script src="js/calendar.js"></script>
+</body>
+</html>
