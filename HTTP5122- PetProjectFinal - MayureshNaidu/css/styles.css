@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #54624B;
+    color: #333;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.logo h1 {
+    color: #E6EDDE;
+    font-size: 28px;
+}
+
+.back-button {
+    background-color: #E6EDDE;
+    color: #54624B;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.plant-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.plant-tile {
+    background-color: #E6EDDE;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px);
+    overflow: hidden;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.plant-tile:hover {
+    transform: translateY(-5px);
+}
+
+.plant-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.plant-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.remove-plant-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background-color 0.2s;
+}
+
+.remove-plant-btn:hover {
+    background-color: #d32f2f;
+}
+
+.plant-info {
+    padding: 15px;
+}
+
+.plant-info h3 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.plant-info p {
+    color: #666;
+    font-size: 14px;
+}
+
+.add-plant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E6EDDE;
+    height: 270px;
+}
+
+.add-plant-content {
+    text-align: center;
+}
+
+.plus-icon {
+    font-size: 48px;
+    color: #54624B;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.nav-buttons button {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #E6EDDE;
+    color: #54624B;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.nav-buttons button:hover {
+    background-color: #3e8e41;
+}
+
+/* Search Page Styles */
+.search-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#plant-search {
+    background-color: #E6EDDE;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.search-results {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.plant-search-tile {
+    background-color: #E6EDDE;
+    color: #54624B;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.plant-search-tile:hover {
+    transform: translateY(-5px);
+}
+
+.plant-search-tile img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.plant-search-tile p {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#add-plant-form {
+    background-color: #E6EDDE;
+    color: #54624B;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.care-tips {
+    margin-bottom: 20px;
+}
+
+.care-tips ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.form-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#cancel-btn {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+#submit-btn {
+    background-color: #54624B;
+    color: white;
+}
+
+.calendar-container {
+    background-color: #E6EDDE;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.calendar-header button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #4CAF50;
+}
+
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+}
+
+.day {
+    min-height: 100px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    position: relative;
+}
+
+.day-number {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.day.other-month {
+    background-color: #f5f5f5;
+    color: #aaa;
+}
+
+.day.today {
+    color: #E6EDDE;
+    background-color: #54624B;
+}
+
+.water-reminder {
+    background-color: #54624B;
+    color: #E6EDDE;
+    padding: 3px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.popup-buttons button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#mark-watered {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#water-tomorrow {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+#close-popup {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .plant-tile {
+        width: calc(50% - 15px);
+    }
+    
+    .search-results {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .nav-buttons {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .plant-tile {
+        width: 100%;
+    }
+    
+    .search-results {
+        grid-template-columns: 1fr;
+    }
+    
+    .calendar-days .day {
+        min-height: 70px;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantPal - Add Plant</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <!-- Header with plant species name -->
+    <header>
+        <div class="back-button" id="back-to-search">←</div>
+        <h1 style="color: #E6EDDE;" id="plant-species">Plant Species</h1>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+        <form id="add-plant-form">
+
+            <div class="form-group">
+                <label for="plant-name">Plant Name:</label>
+                <input type="text" id="plant-name" placeholder="Give your plant a name">
+            </div>
+
+            <div class="form-group">
+                <label for="plant-description">Description:</label>
+                <textarea id="plant-description" placeholder="Add some notes about your plant"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="watering-frequency">Watering Frequency (days):</label>
+                <input type="number" id="watering-frequency" min="1" value="7">
+            </div>
+
+            <div class="care-tips">
+                <h3>Care Tips:</h3>
+                <div id="plant-care-tips">
+                    <!-- Care tips will be loaded dynamically -->
+                </div>
+            </div>
+
+            <div class="form-buttons">
+                <button type="button" id="cancel-btn">Cancel</button>
+                <button type="button" id="submit-btn">Submit</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

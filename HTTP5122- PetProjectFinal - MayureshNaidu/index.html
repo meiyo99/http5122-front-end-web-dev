@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantPal - Your Plant Care Assistant</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <!-- Header with logo -->
+    <header>
+        <div class="logo">
+            <h1>PlantPal</h1>
+        </div>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+        <section class="plant-container">
+            <!-- Hardcoded Plant 1 -->
+            <div class="plant-tile">
+                <div class="plant-image">
+                    <img src="images/snake-plant.jpg" alt="Snake Plant">
+                </div>
+                <div class="plant-info">
+                    <h3>Jake the Snake Plant</h3>
+                    <p>Last watered: 3 days ago</p>
+                </div>
+            </div>
+
+            <!-- Hardcoded Plant 2 -->
+            <div class="plant-tile">
+                <div class="plant-image">
+                    <img src="images/monstera.jpg" alt="Monstera">
+                </div>
+                <div class="plant-info">
+                    <h3>Maya</h3>
+                    <p>Last watered: 1 day ago</p>
+                </div>
+            </div>
+
+            <!-- Add Plant Tile -->
+            <div class="plant-tile add-plant" id="add-plant-tile">
+                <div class="add-plant-content">
+                    <h3>Add Plant</h3>
+                    <span class="plus-icon">+</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation buttons -->
+        <section class="nav-buttons">
+            <button id="calendar-btn">Calendar</button>
+            <button id="photos-btn">Photos</button>
+            <button id="care-tips-btn">Care Tips</button>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

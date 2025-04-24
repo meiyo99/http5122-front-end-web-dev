@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantPal - Calendar</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <!-- Header with back button -->
+    <header>
+        <div class="back-button" id="back-to-home">←</div>
+        <h1 style="color: #E6EDDE;">Plant Care Calendar</h1>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+        <div class="calendar-container">
+            <div class="calendar-header">
+                <button id="prev-month">←</button>
+                <h2 id="month-year">April 2025</h2>
+                <button id="next-month">→</button>
+            </div>
+            
+            <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            
+            <div class="calendar-days" id="calendar-days">
+                <!-- Calendar days will be generated with JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Popup for water notification -->
+    <div id="water-popup" class="popup">
+        <div class="popup-content">
+            <h3 id="popup-plant-name">Plant Name</h3>
+            <p>Watering scheduled for today.</p>
+            <div class="popup-buttons">
+                <button id="mark-watered">Mark as watered</button>
+                <button id="water-tomorrow">Water tomorrow</button>
+            </div>
+            <button id="close-popup">Close</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
